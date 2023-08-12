@@ -20,8 +20,6 @@ router.post('/', (req, res) => {
                 <li><strong>Phone:</strong> ${phone}</li>
             </ul>
             <p>Message: ${message}</p>
-            <p>Best regards,</p>
-            <p>Your Name</p>
         `,
     };
     
