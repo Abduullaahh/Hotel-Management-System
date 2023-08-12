@@ -25,6 +25,7 @@ var historydataRouter = require('./routes/historydata');
 var showhistroyRouter = require('./routes/showhistroy');
 var deleteapprovedRouter = require('./routes/deleteapproved');
 var deleterejectedRouter = require('./routes/deleterejected');
+var contactmailRouter = require('./routes/contactmail');
 const database = require('./database/mirage_hotel');
 
 var app = express();
@@ -67,6 +68,7 @@ app.use('/historydata', historydataRouter);
 app.use('/showhistroy', showhistroyRouter);
 app.use('/deleteapproved', deleteapprovedRouter);
 app.use('/deleterejected', deleterejectedRouter);
+app.use('/contactmail', contactmailRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
