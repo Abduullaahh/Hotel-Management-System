@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
         else
         {
             console.log("Employee data store");
-            res.redirect('http://localhost:3000/manageemployee');
+            res.redirect('https://mirage-hotel.netlify.app/manageemployee');
         }
     })
 });
