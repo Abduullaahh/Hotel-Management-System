@@ -28,6 +28,7 @@ router.post('/', (req, res) => {
             if (error) throw error;
             else {
                 console.log("Email Sent")
+                res.redirect('http://mirage-hotel.netlify.app/contactus');
             }
         }
     )
