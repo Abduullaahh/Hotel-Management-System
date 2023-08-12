@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
         else
         {
             console.log("Review store");
-            res.redirect('http://localhost:3000/userportal');
+            res.redirect('https://mirage-hotel.netlify.app/userportal');
         }
     })
 });
