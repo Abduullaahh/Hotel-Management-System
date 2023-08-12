@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
         else
         {
             console.log("Room store");
-            res.redirect('http://localhost:3000/managerooms');
+            res.redirect('https://mirage-hotel.netlify.app/managerooms');
         }
     })
 });
