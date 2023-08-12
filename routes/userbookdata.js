@@ -49,7 +49,7 @@ router.post('/', (req, res) => {
                     }
                 }
             )
-            res.redirect('http://localhost:3000');
+            res.redirect('https://mirage-hotel.netlify.app');
         }
     })
 });
