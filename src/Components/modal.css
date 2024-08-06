@@ -1,0 +1,73 @@
+/* Overlay Background */
+.ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    align-items: center;
+  }
+  
+  /* Modal Content */
+  .ReactModal__Content {
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 5px solid rgb(0, 0, 0);
+  }
+  @media (max-width: 768px) {
+    .ReactModal__Content {
+      display:list-item;
+    }
+    .ReactModal__Content img {
+      max-width: 220px;
+      max-height: 120px;
+    }
+    .ReactModal__Content .text {
+      width: auto;
+      height: auto;
+      max-width: 220px;
+    }
+  }
+  .ReactModal__Content img {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+  }
+  .ReactModal__Content .text{
+    padding: 0px 20px;
+    padding-top: 15px;
+    flex: 1;
+    width: 500px;
+    height: 500px;
+  }
+  
+  /* Close Button */
+.close-button {
+    color: white;
+    background-color: rgba(37, 29, 17, 0.562);
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 40px;
+    width: 40px;
+    transition: ease-in all 0.5s;
+    position: fixed;
+    z-index: 2;
+    right: 155px;
+  }
+  .close-button:hover {
+    background-color: #f4c506;
+  }
